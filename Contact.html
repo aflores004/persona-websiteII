@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <title>Document</title>
@@ -5,8 +6,8 @@
 </head>
 <body>
   <div>
-    <header id="header">
-      <nav id="nav-bar">
+    <header>
+      <nav>
         <div>
           <h1>Armando Flores</h1>
       </div>
@@ -17,61 +18,34 @@
       </nav>
     </header>
 
-    <main class="portfolio-main">
-      <h1 id="project-header">Some of my projects</h1>
-      <div id="project-container">
-        <section class="projects">
-          <h2>The First Project</h2>
-          <div class="project-content">
-            <img src="https://i.etsystatic.com/27759810/r/il/f178f4/3661501502/il_fullxfull.3661501502_3dzo.jpg" alt="memory-game">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at
-              earum fuga harum alias nobis, eaque optio laudantium dolor sed
-              eligendi consequatur distinctio aperiam accusantium, architecto
-              exercitationem perferendis minus error.
-            </p>
-            <p>
-              Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio
-              ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui
-              sed odio officia ipsa omnis earum quibusdam, dolor totam?
-            </p>
-          </div>
-        </section>
-        <section class="projects">
-          <h2>The Second Project</h2>
-          <div class="project-content">
-            <img src="https://www.101computing.net/wp/wp-content/uploads/js-calculator.png" alt="calcuator">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at
-              earum fuga harum alias nobis, eaque optio laudantium dolor sed
-              eligendi consequatur distinctio aperiam accusantium, architecto
-              exercitationem perferendis minus error.
-            </p>
-            <p>
-              Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio
-              ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui
-              sed odio officia ipsa omnis earum quibusdam, dolor totam?
-            </p>
-          </div>
-        </section>
-        <section class="projects">
-          <h2>The Third Project</h2>
-          <div class="project-content">
-            <img src="https://t3.ftcdn.net/jpg/03/12/95/72/360_F_312957201_nwuPklullE9qNAFov708ixqjfukfjJGN.jpg" alt="countdown-app">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at
-              earum fuga harum alias nobis, eaque optio laudantium dolor sed
-              eligendi consequatur distinctio aperiam accusantium, architecto
-              exercitationem perferendis minus error.
-            </p>
-            <p>
-              Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio
-              ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui
-              sed odio officia ipsa omnis earum quibusdam, dolor totam?
-            </p>
-          </div>
-        </section>
+    <main class="main-contact" >
+      <div class="flex-container">
+        <label for="text">Enter Your Name</label>
+        <div>
+          <form class="name-email">
+          <input type="text" value="Name"/>  
+          </form></div>
+        
+    
+    
+        <div>
+          <div><label for="text">Enter Your Email</label></div>
+          <form class="name-email">
+          <input type="text" value="Email"/>  
+          </form></div>
+        
       </div>
+
+      <textarea id="w3review" name="w3review" rows="15" cols="55">
+        Please leave any additional comments or concerns you may have in this box!
+        </textarea>
+      <br></br>
+
+        <form action="success.html">
+          <input type="submit" value="Submit"/>
+       <label for="text"></label>
+        </form>
+        <img class="z-index" z  src="https://i.etsystatic.com/7168514/r/il/5cce9a/1428542078/il_fullxfull.1428542078_6hzb.jpg">
     </main>
     
     <footer>
@@ -81,7 +55,7 @@
     <a href="https://git-scm.com/" target="_blank">
       <img class="media-link" src="https://res.cloudinary.com/practicaldev/image/fetch/s--RLswQYKe--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5yp4tyvy7m0xjj0f2i7j.png" alt="Git">
     </a>
-    <a href="https://www.linkedin.com/" target="_blank">
+    <a href="https://www.linkedin.com" target="_blank">
       <img class="media-link" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC" alt="Linkedin">
     </a>
   </footer>
